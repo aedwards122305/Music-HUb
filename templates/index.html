@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Various Melody Music Hub</title>
+</head>
+<body>
+    <h1>Various Melody Music Hub</h1>
+
+    <h2>Add a Project</h2>
+    <form id="addProjectForm" methods="POST" action="/add">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="project" placeholder="Project Name" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Project List</h2>
+    <table id="projectsTable">
+        <thread>
+            <tr>
+                <th>ID<th>
+                <th>Name<th>
+                <th>Project Name<th>
+                <th>Actions<th>
+            </tr>
+        </thread>
+        <tbody>
+        <t/body>
+    </table>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
