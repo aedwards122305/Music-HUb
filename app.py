@@ -17,7 +17,7 @@ def init_db():
 @app.route('add', methods=['POST'])
 def add_project():
     name = request.form['name']
-    conn =sqlite3.connect('databse.db')
+    conn =sqlite3.connect('database.db')
     cur = conn.cursor()
     cur.execute("INSERT INTO projects (name, projects_name) VALUES (?, ?)",(name, project_name))
     conn.commit()
